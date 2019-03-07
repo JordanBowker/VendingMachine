@@ -1,0 +1,24 @@
+::ng-deep .failed {
+    background: red;
+    font-size: 50px !important;
+    height: 300px;
+    width: 800px;
+}
+
+::ng-deep .success{
+    background: lawngreen;
+    font-size: 50px !important;
+    height: 300px;
+    width: 800px;
+}
+
+::ng-deep .failed .mat-simple-snackbar span{
+    font-size: 50px !important;
+    color: black;
+    margin:auto;
+}
+
+::ng-deep .success .mat-simple-snackbar span{
+    font-size: 50px !important;
+    margin:auto;
+}

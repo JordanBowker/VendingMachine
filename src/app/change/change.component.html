@@ -1,0 +1,5 @@
+<div class="change" *ngIf="changeAmount$ | async | currency:'GBP' as changeAmount">
+    {{changeAmount}}
+    <button mat-raised-button color="primary" (click)="collectChange()">Collect Change</button>
+ </div>
+  

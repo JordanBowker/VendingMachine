@@ -1,0 +1,7 @@
+<div class="product">
+ {{name}}, {{price | currency:'GBP' }}, Quantity: {{quantity}}
+  <button *ngIf="quantity>0;else soldOut" mat-raised-button color="accent" (click)="attemptPurchase(id)">Purchase</button>
+  <ng-template #soldOut>
+    <button mat-raised-button color="warn">Sold Out</button>
+  </ng-template>
+</div>

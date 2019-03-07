@@ -1,0 +1,26 @@
+<mat-grid-list cols="4" rowHeight="100px" [style.background]="'black'">
+  <mat-grid-tile [colspan]="3" [rowspan]="3" [style.background]="'#DDBDF1'">
+    <app-products></app-products>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="2" [style.background]="'cornsilk'">
+    <app-display></app-display>
+    <mat-grid-tile-header [style.font-size]="'20px'">
+      Inserted Amount
+    </mat-grid-tile-header>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'cornsilk'">
+    <app-refund></app-refund>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]="2" [style.background]="'lightblue'">
+    <app-coins></app-coins>
+    <mat-grid-tile-header [style.font-size]="'40px'">
+      Insert Coins
+    </mat-grid-tile-header>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="2" [style.background]="'lightgreen'">
+    <app-change></app-change>
+    <mat-grid-tile-header [style.font-size]="'20px'">
+      Change
+    </mat-grid-tile-header>
+  </mat-grid-tile>
+</mat-grid-list>
